@@ -1,0 +1,45 @@
+> db.carrier.find()
+{ "_id" : ObjectId("5a29e9a63f6858a2dc6da317"), "airline_id" : 2001, "carrier_name" : "AirCan", "country" : "Canada" }
+{ "_id" : ObjectId("5a29e9a63f6858a2dc6da318"), "airline_id" : 2003, "carrier_name" : "British Air", "country" : "UK" }
+{ "_id" : ObjectId("5a29e9a63f6858a2dc6da319"), "airline_id" : 2002, "carrier_name" : "United", "country" : "USA" }
+
+> db.airport.find()
+{ "_id" : ObjectId("5a29e98e3f6858a2dc6da30a"), "airport_id" : 301, "city" : "Toronto", "country" : "Canada", "province_state" : "Ontario" }
+{ "_id" : ObjectId("5a29e98e3f6858a2dc6da30b"), "airport_id" : 302, "city" : "Montreal", "country" : "Canada", "province_state" : "Quebec" }
+{ "_id" : ObjectId("5a29e98e3f6858a2dc6da30c"), "airport_id" : 304, "city" : "Chicago", "country" : "USA", "province_state" : "Illinos" }
+{ "_id" : ObjectId("5a29e98e3f6858a2dc6da30d"), "airport_id" : 303, "city" : "New York", "country" : "USA", "province_state" : "New York" }
+{ "_id" : ObjectId("5a29e98e3f6858a2dc6da30e"), "airport_id" : 306, "city" : "Endinburgh", "country" : "UK", "province_state" : "None" }
+{ "_id" : ObjectId("5a29e98e3f6858a2dc6da30f"), "airport_id" : 305, "city" : "London", "country" : "UK", "province_state" : "None" }
+{ "_id" : ObjectId("5a29e98e3f6858a2dc6da310"), "airport_id" : 307, "city" : "Paris", "country" : "France", "province_state" : "None" }
+{ "_id" : ObjectId("5a29e98e3f6858a2dc6da311"), "airport_id" : 308, "city" : "Nice", "country" : "France", "province_state" : "None" }
+
+
+> db.flight.find()
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da31f"), "unique_flight_number" : 101, "origin_id" : 302, "destination_id" : 301, "airline_id" : 2001, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da320"), "unique_flight_number" : 104, "origin_id" : 305, "destination_id" : 301, "airline_id" : 2002, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da321"), "unique_flight_number" : 102, "origin_id" : 303, "destination_id" : 301, "airline_id" : 2002, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da322"), "unique_flight_number" : 105, "origin_id" : 305, "destination_id" : 301, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da323"), "unique_flight_number" : 106, "origin_id" : 306, "destination_id" : 301, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da324"), "unique_flight_number" : 107, "origin_id" : 301, "destination_id" : 302, "airline_id" : 2001, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da325"), "unique_flight_number" : 108, "origin_id" : 306, "destination_id" : 302, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da326"), "unique_flight_number" : 109, "origin_id" : 301, "destination_id" : 303, "airline_id" : 2002, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da327"), "unique_flight_number" : 103, "origin_id" : 304, "destination_id" : 301, "airline_id" : 2002, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da328"), "unique_flight_number" : 111, "origin_id" : 301, "destination_id" : 304, "airline_id" : 2002, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da329"), "unique_flight_number" : 113, "origin_id" : 301, "destination_id" : 305, "airline_id" : 2002, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da32a"), "unique_flight_number" : 114, "origin_id" : 302, "destination_id" : 305, "airline_id" : 2001, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da32b"), "unique_flight_number" : 115, "origin_id" : 306, "destination_id" : 305, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da32c"), "unique_flight_number" : 116, "origin_id" : 307, "destination_id" : 305, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da32d"), "unique_flight_number" : 118, "origin_id" : 301, "destination_id" : 306, "airline_id" : 2001, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da32e"), "unique_flight_number" : 117, "origin_id" : 308, "destination_id" : 305, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da32f"), "unique_flight_number" : 112, "origin_id" : 303, "destination_id" : 304, "airline_id" : 2002, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da330"), "unique_flight_number" : 119, "origin_id" : 302, "destination_id" : 306, "airline_id" : 2001, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da331"), "unique_flight_number" : 122, "origin_id" : 308, "destination_id" : 306, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da332"), "unique_flight_number" : 123, "origin_id" : 305, "destination_id" : 307, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da333"), "unique_flight_number" : 124, "origin_id" : 306, "destination_id" : 307, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da334"), "unique_flight_number" : 121, "origin_id" : 307, "destination_id" : 306, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da335"), "unique_flight_number" : 125, "origin_id" : 308, "destination_id" : 307, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da336"), "unique_flight_number" : 126, "origin_id" : 305, "destination_id" : 308, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da337"), "unique_flight_number" : 127, "origin_id" : 306, "destination_id" : 308, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da338"), "unique_flight_number" : 128, "origin_id" : 307, "destination_id" : 308, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da339"), "unique_flight_number" : 120, "origin_id" : 305, "destination_id" : 306, "airline_id" : 2003, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
+{ "_id" : ObjectId("5a29e9be3f6858a2dc6da33a"), "unique_flight_number" : 110, "origin_id" : 304, "destination_id" : 303, "airline_id" : 2002, "date_time_departure" : "01.02.2018 15:00", "date_time_arrival" : "01.02.2018 18:00", "time_of_flight" : "3:00" }
